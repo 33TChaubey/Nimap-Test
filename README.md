@@ -1,21 +1,45 @@
-cd nimap_test
+# Nimap Test Project
 
-python3 -m venv venv
+![Django Logo](https://www.djangoproject.com/m/img/logos/django-logo-negative.png)
+![Django REST Framework Logo](https://www.django-rest-framework.org/img/logo.png)
 
-source venv/bin/activate
+## Setup Instructions
 
-pip3 install -r requirements.txt
+1. Navigate to the project directory:
+    ```bash
+    cd nimap_test
+    ```
 
-<!-- Uses Postgresql -->
-python3 manage.py makemigrations
+2. Create a virtual environment:
+    ```bash
+    python3 -m venv venv
+    ```
 
-python3 manage.py migrate
+3. Activate the virtual environment:
+    ```bash
+    source venv/bin/activate
+    ```
 
-python3 manage.py runserver
+4. Install project dependencies:
+    ```bash
+    pip3 install -r requirements.txt
+    ```
+2. Create a virtual environment:
+    ```bash
+    Uses a Postgres Database As per Documentation
+    ```
+5. Apply database migrations:
+    ```bash
+    python3 manage.py makemigrations
+    python3 manage.py migrate
+    ```
+    
+6. Run the development server:
+    ```bash
+    python3 manage.py runserver
+    ```
 
-## Here's the link of the client and projects
+## API Endpoints
 
-{
-    "clients": "http://localhost:8000/api/clients/",
-    "projects": "http://localhost:8000/api/projects/"
-}
+- Clients: [http://localhost:8000/api/clients/](http://localhost:8000/api/clients/)
+- Projects: [http://localhost:8000/api/projects/](http://localhost:8000/api/projects/)
